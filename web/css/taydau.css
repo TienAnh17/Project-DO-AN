@@ -1,0 +1,174 @@
+@media (min-width: 576px) {
+    .banner .banner-slide .swiper-slide {
+        height: 50vh !important
+    }
+}
+
+@media (min-width: 768px) {
+    .banner .banner-slide .swiper-slide {
+        height: 70vh !important
+    }
+}
+
+.banner {
+    position: relative
+}
+
+.banner .banner-slide {
+    background-image: url("../images/taydau/bg-slide.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1
+}
+
+.banner .banner-slide .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: 100%;
+    height: 30vh
+}
+
+.banner .dd-team {
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 2
+}
+
+.banner .dd-team .btn-team {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    border: 0
+}
+
+.banner .dd-team .dropdown-menu {
+    z-index: 2;
+    border: unset !important;
+    border-radius: unset !important;
+    background-color: #E2E2E2;
+    width: 100%;
+    top: -102px !important;
+    right: 0 !important;
+    padding-top: 100px;
+    transform: translate3d(0px, 102px, 0px) !important
+}
+
+.banner .dd-team .dropdown-menu img {
+    object-fit: contain
+}
+
+.banner .dd-team .dropdown-menu h5,
+.banner .dd-team .dropdown-menu p {
+    text-align: center
+}
+
+.rank .table-title table {
+    width: 100%
+}
+
+.rank .table-title table tr th {
+    padding: 19px;
+    text-align: center
+}
+
+.rank .table-content {
+    overflow-x: auto
+}
+
+.rank .table-content table {
+    width: 100%
+}
+
+.rank .table-content table th,
+.rank .table-content table td {
+    text-align: center;
+    padding: 10px
+}
+
+.rank .table-content table th span,
+.rank .table-content table td span {
+    display: inline-block;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.rank .table-content table th span {
+    background-color: #FF550D;
+    font-weight: bold
+}
+
+.rank .table-content table .black-cell span {
+    background-color: black;
+    color: white
+}
+
+.rank .table-content table .gray-cell span {
+    background-color: lightgray;
+    color: black
+}
+
+.time-line .wrap-content-time-line {
+    border-top: 8px solid #FF550D
+}
+
+.time-line .wrap-content-time-line ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.time-line .wrap-content-time-line ul li button {
+    transition: 0.3s all ease;
+    position: relative;
+    padding: 20px 0
+}
+
+.time-line .wrap-content-time-line ul li .active {
+    color: #FF550D
+}
+
+.time-line .wrap-content-time-line ul li .active::after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/materials/biker.png");
+    background-size: cover;
+    height: 140%;
+    aspect-ratio: 141 / 122.63;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: calc(100% + 2px)
+}
+
+.tay-dua .td {
+    position: relative
+}
+
+.tay-dua .td .flag {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s all ease
+}
+
+.tay-dua .td .flag img {
+    width: 100%;
+    z-index: 1
+}
+
+.tay-dua .td .td-profile img {
+    z-index: 3
+}
+
+.tay-dua .td:hover .flag {
+    opacity: 1 !important
+}

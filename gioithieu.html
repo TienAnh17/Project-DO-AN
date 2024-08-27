@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./web/images/favicon.png" />
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="./web/css/style.css">
+    <link rel="stylesheet" href="./web/css/bootstrap-5.3.3.min.css">
+    <script src="./web/js/bootstrap-5.3.3.bundle.min.js"></script>
+    <link rel="stylesheet" href="./web/css/fa-all.min.css">
+    <script src="./web/js/fa-all.min.js"></script>
+    <link rel="stylesheet" href="./web/css/swiper-bundle.css">
+    <script src="./web/js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./web/css/gioithieu.css">
+
+</head>
+
+<body>
+    <div class="modal fade" id="cmsModal" tabindex="-1" aria-labelledby="cmsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px; width: 100%;">
+            <div class="modal-content">
+                <div class="modal-body m-0 p-5 d-flex justify-content-center">
+                    <h3>comming soon!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intro">
+        <div class="loading">
+            <i class="fas fa-spinner fa-3x spinning"></i>
+        </div>
+    </div>
+    <div id="wrapper" class="w-100 m-0 p-0 d-none">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="racingTourSidebar"
+            aria-labelledby="racingTourSidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="racingTourSidebarLabel">TÔN HOA SEN CLUB</h5>
+                <button type="button" class="btn m-0 p-0 border-0 shadow-0 text-main-color" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fas fa-times" style="font-size: 28px;"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="gioithieu.html" class="nav-link">giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="giaidau.html" class="nav-link">giải đấu</a>
+                    </li>
+                    <li>
+                        <a href="taydau.html" class="nav-link">tay đấu</a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">tin tức</a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav id="navbar" class="container-fluid sticky-top">
+            <div class="container wrap-nav d-flex justify-content-between gap-5 justify-content-lg-center">
+                <a href="index.html" class="nav-logo">
+                    <img loading="lazy" src="./web/images/logo.png">
+                </a>
+
+                <button class="btn m-0 p-0 d-lg-none text-main-color" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#racingTourSidebar" aria-controls="racingTourSidebar">
+                    <i class="fas fa-bars" style="font-size: 28px;"></i>
+                </button>
+
+                <ul class="nav-menu d-none d-lg-flex gap-5">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gioithieu.html" class="nav-link">giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="giaidau.html" class="nav-link">giải đấu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="taydau.html" class="nav-link">tay đấu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container-fluid px-0">
+            <div class="banner container-fluid mb-4 mb-md-5">
+                <div class="container py-5">
+                    <div class="row m-0 p-0">
+                        <div class="col-12 col-md-7 col-lg-6 py-4 py-md-5 px-3 position-relative">
+                            <div class="bg-cover d-md-none"></div>
+                            <h1>giải đấu<br> đầy hấp dẫn</h1>
+                            <h6>Giải xe đạp VTV Cúp Tôn Hoa Sen 2020 là giải đấu quy mô do Đài Truyền hình Việt Nam phối
+                                hợp cùng Liên đoàn Xe đạp - Mô tô Thể thao Việt Nam, Tập đoàn Hoa Sen, Công ty Truyền
+                                thông Unic tổ chức</h6>
+                            <button class="btn-main" type="button" data-bs-toggle="modal" data-bs-target="#cmsModal">Tham gia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content container mb-4 mb-md-5">
+                <div class="w-100 m-0 p-0 mb-3">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./web/images/gioithieu/flag.png" />
+                    </div>
+                    <h3 class="title-clear text-center m-0">bắt đầu</h3>
+                </div>
+                <div class="w-100 wrap-content">
+                    <div class="container py-5">
+                        <div class="row m-0 mb-5 p-0 py-5">
+                            <div class="col-12 col-md-4 col-lg-6"></div>
+                            <div class="col-12 col-md-8 col-lg-6 content-item">
+                                <div class="title mb-3">
+                                    <p class="stt">1</p>
+                                    <h2>giải đấu quy mô
+                                        chuẩn quốc tế</h2>
+                                </div>
+                                <p>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row m-0 mb-5 p-0 py-5">
+                            <div class="col-12 col-md-8 col-lg-6 content-item">
+                                <div class="title mb-3">
+                                    <p class="stt">2</p>
+                                    <h2>là giải đấu có quy chế công bằng</h2>
+                                </div>
+                                <p>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-6"></div>
+                        </div>
+                        <div class="row m-0 mb-5 p-0 py-5">
+                            <div class="col-12 col-md-4 col-lg-6"></div>
+                            <div class="col-12 col-md-8 col-lg-6 content-item">
+                                <div class="title mb-3">
+                                    <p class="stt">3</p>
+                                    <h2>đơn vị tổ chức uy tín, tạo độ tin cậy cao</h2>
+                                </div>
+                                <p>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row m-0 mb-5 p-0 py-5">
+                            <div class="col-12 col-md-8 col-lg-6 content-item">
+                                <div class="title mb-3">
+                                    <p class="stt">4</p>
+                                    <h2>Tổ chức mở rộng
+                                        quy tụ nhiều tay đua</h2>
+                                </div>
+                                <p>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                    VTV - Cup Tôn Hoa Sen là một trong những giải đấu đua xe đạp lớn nhất Việt Nam. Được
+                                    liên kết hợp tác Giữa Đài truyền hình VTV Việt Nam và Công ty cổ phần tập đoằn Tôn
+                                    Hoa Sen.<br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-6"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 m-0 p-0 mb-3">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./web/images/gioithieu/flag.png" />
+                    </div>
+                    <h3 class="title-clear text-center m-0">đích</h3>
+                </div>
+            </div>
+
+            <div class="play-video px-0 container-fluid py-4 py-md-5">
+                <div class="container">
+                    <div class="bg-cover">
+                        <img src="./web/images/gioithieu/play-card.png" style="object-fit: contain;" class="w-100">
+                    </div>
+                    <div class="row m-0 p-0 wrap-content">
+                        <div class="col-7 d-flex align-items-center justify-content-center px-lg-5">
+                            <div class="content px-4">
+                                <h3 class="title-clear">tham gia NHiều
+                                    hoạt động ý nghĩa</h3>
+                                <p class="d-none d-md-block">Giải đấu có nhiều hoạt động ý nghĩa nhằm nâng cao tinh thần
+                                    thể thao, chung tay xây
+                                    dựng các giá trị cộng đồng, tạo dựng uy tín và độ tin cây cao cả trong và ngoài
+                                    nước.</p>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <a href="https://www.youtube.com/watch?v=Au1u8PuGtRE" target="_blank" class="btn btn-play">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end align-items-start">
+                            <div class="column-social px-3">
+                                <a href="#" class="btn">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-now container py-4 py-md-5">
+                <div class="row m-0 p-0 py-4 py-md-5">
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                        <div class="content">
+                            <h3 class="mb-4">Tham gia ngay!</h3>
+                            <p>Dũng cảm tham gia giải đẩu của chúng tôi, tham gia trải nghiểm bứt phá giới hạn bản thân.
+                            </p>
+                            <button class="btn-main" type="button" data-bs-toggle="modal" data-bs-target="#cmsModal">Tham gia</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./web/images/gioithieu/join-now.png" class="w-100">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="don-vi-tai-tro container">
+                <h3>đơn vị tài trợ</h3>
+                <div class="swiper my-4 my-xl-5 w-100 don-vi-tai-tro-slide">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/vtv.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/hoasen.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/vcf.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/unix.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/omo.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/gt.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/trek.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/twitter.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="container-fluid p-0">
+            <div class="container pt-4">
+                <!-- row: tạo hàng ngang -->
+                <div class="row m-0 p-3 px-md-4 px-lg-5">
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/logo.png">
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-facebook-square fa-2x me-2"></i>vtvcuptuhaotoasang
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-instagram-square fa-2x me-2"></i>@vtvgo.vn
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-youtube fa-2x me-2"></i>@vtvthethaoofficial
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/vtv.png">
+                        </div>
+                        <h6 class="text-center">VTV - Đài truyền hình Viêt Nam</h6>
+                        <p class="text-center">Tổng đài VTV:<br>
+                             (024) 3.8355931; <br>(024) 3.8355932</p>
+                        <p class="text-center">Email: toasoan@vtv.vn</p>
+                    </div>
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/hoasen.png">
+                        </div>
+                        <h6 class="text-center">Công ty tập đoàn Tôn Hoa Sen</h6>
+                        <p class="text-center">Khu công nghiệp Sóng Thần II,
+                            Phường Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương,
+                            Việt Nam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-0 px-0 py-2 copy-right d-flex justify-content-center bg-dark">
+                <span>
+                    Copyright 2024 © Tôn Hoa Sen Club
+                </span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var intro = document.getElementById("intro");
+        var wrapper = document.getElementById("wrapper");
+        setTimeout(function () {
+            intro.classList.add('d-none');
+            wrapper.classList.remove('d-none');
+        }, 500);
+    </script>
+
+    <script>
+        var swiper = new Swiper(".don-vi-tai-tro-slide", {
+            autoplay: true,
+            loop: true,                 //lặp lại: có
+            slidesPerView: 2,         //slide / khung hình: 1 khung và 0,7 khung
+            spaceBetween: 32,           //Khoảng cách giữa các slide: 32px;
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./web/images/favicon.png" />
+    <title>Tay đấu</title>
+    <link rel="stylesheet" href="./web/css/style.css">
+    <link rel="stylesheet" href="./web/css/bootstrap-5.3.3.min.css">
+    <script src="./web/js/bootstrap-5.3.3.bundle.min.js"></script>
+    <link rel="stylesheet" href="./web/css/fa-all.min.css">
+    <script src="./web/js/fa-all.min.js"></script>
+    <link rel="stylesheet" href="./web/css/swiper-bundle.css">
+    <script src="./web/js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./web/css/taydau.css">
+
+</head>
+
+<body>
+    <div class="modal fade" id="cmsModal" tabindex="-1" aria-labelledby="cmsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px; width: 100%;">
+            <div class="modal-content">
+                <div class="modal-body m-0 p-5 d-flex justify-content-center">
+                    <h3>comming soon!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intro">
+        <div class="loading">
+            <i class="fas fa-spinner fa-3x spinning"></i>
+        </div>
+    </div>
+    <div id="wrapper" class="w-100 m-0 p-0 d-none">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="racingTourSidebar"
+            aria-labelledby="racingTourSidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="racingTourSidebarLabel">TÔN HOA SEN CLUB</h5>
+                <button type="button" class="btn m-0 p-0 border-0 shadow-0 text-main-color" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fas fa-times" style="font-size: 28px;"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="gioithieu.html" class="nav-link">giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="giaidau.html" class="nav-link">giải đấu</a>
+                    </li>
+                    <li>
+                        <a href="taydau.html" class="nav-link">tay đấu</a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">tin tức</a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav id="navbar" class="container-fluid sticky-top">
+            <div class="container wrap-nav d-flex justify-content-between gap-5 justify-content-lg-center">
+                <a href="index.html" class="nav-logo">
+                    <img loading="lazy" src="./web/images/logo.png">
+                </a>
+
+                <button class="btn m-0 p-0 d-lg-none text-main-color" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#racingTourSidebar" aria-controls="racingTourSidebar">
+                    <i class="fas fa-bars" style="font-size: 28px;"></i>
+                </button>
+
+                <ul class="nav-menu d-none d-lg-flex gap-5">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gioithieu.html" class="nav-link">giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="giaidau.html" class="nav-link">giải đấu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="taydau.html" class="nav-link">tay đấu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal" class="nav-link">hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container-fluid px-0">
+
+            <div class="banner container-fluid px-0 mb-4 mb-md-5">
+                <div class="swiper w-100 banner-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/1.png');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/2.png');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/3.png');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/4.png');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/5.png');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('./web/images/taydau/6.png');">
+                        </div>
+                    </div>
+
+                    <!-- Hai nút điều khiển của SwiperJS -->
+                    <div class="btn swiper-button-prev">
+                    </div>
+                    <div class="btn swiper-button-next">
+                    </div>
+                </div>
+                <div class="w-100 container dd-team">
+                    <button type="button" class="btn btn-team m-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./web/images/taydau/btn-team.png" class="w-100">
+                    </button>
+
+                    <div class="dropdown-menu m-0">
+                        <div class="row w-100 m-0">
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t1.png" class="w-100">
+                                </div>
+                                <h5>ALPECIN-DECEUNINCK</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t2.png" class="w-100">
+                                </div>
+                                <h5>ARKEA-B&B</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t3.png" class="w-100">
+                                </div>
+                                <h5>ASTANA QAZAQSTAN</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t4.png" class="w-100">
+                                </div>
+                                <h5>BAHRAIN</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t5.png" class="w-100">
+                                </div>
+                                <h5>BORA - HANSGROHE</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t6.png" class="w-100">
+                                </div>
+                                <h5>INTERMARCHÉ - WANTY</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t7.png" class="w-100">
+                                </div>
+                                <h5>COFIDIS</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t8.png" class="w-100">
+                                </div>
+                                <h5>DECATHLON AG2R LA MONDIALE</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t9.png" class="w-100">
+                                </div>
+                                <h5>EF EDUCATION - EASYPOST</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t10.png" class="w-100">
+                                </div>
+                                <h5>GROUPAMA-FDJ</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100">
+                                    <img src="./web/images/taydau/t11.png" class="w-100">
+                                </div>
+                                <h5>INEOS GRENADIERS</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                            <div class="col-4 col-md-3 col-lg-2 p-3">
+                                <div class="w-100" v>
+                                    <img src="./web/images/taydau/t12.png" class="w-100">
+                                </div>
+                                <h5>LOTTO DSTNY</h5>
+                                <p>6 thành viên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank container mb-4 mb-md-5">
+                <h3 class="mb-4">xếp hạng</h3>
+                <div class="row m-0 p-0">
+                    <div class="col-3 col-sm-2 col-lg-1 table-title px-3">
+                        <table class="w-100">
+                            <tr>
+                                <th style="padding: 22px !important">Chặng</th>
+                            </tr>
+                            <tr>
+                                <th style="padding: 22px !important">Hạng</th>
+                            </tr>
+                            <tr>
+                                <th><img src="./web/images/taydau/s1.png"></th>
+                            </tr>
+                            <tr>
+                                <th><img src="./web/images/taydau/s2.png"></th>
+                            </tr>
+                            <tr>
+                                <th><img src="./web/images/taydau/s3.png"></th>
+                            </tr>
+                            <tr>
+                                <th><img src="./web/images/taydau/s4.png"></th>
+                            </tr>
+                            <tr>
+                                <th><img src="./web/images/taydau/s5.png"></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-9 col-sm-10 col-lg-11 table-content">
+                        <table class="w-100">
+                            <tr>
+                                <th><span>1</span></th>
+                                <th><span>2</span></th>
+                                <th><span>3</span></th>
+                                <th><span>4</span></th>
+                                <th><span>5</span></th>
+                                <th><span>6</span></th>
+                                <th><span>7</span></th>
+                                <th><span>8</span></th>
+                                <th><span>9</span></th>
+                                <th><span>10</span></th>
+                                <th><span>11</span></th>
+                            </tr>
+                            <tr>
+                                <td class="black-cell"><span>1</span></td>
+                                <td class="black-cell"><span>43</span></td>
+                                <td class="black-cell"><span>23</span></td>
+                                <td class="black-cell"><span>12</span></td>
+                                <td class="black-cell"><span>2</span></td>
+                                <td class="black-cell"><span>78</span></td>
+                                <td class="black-cell"><span>36</span></td>
+                                <td class="black-cell"><span>49</span></td>
+                                <td class="black-cell"><span>46</span></td>
+                                <td class="black-cell"><span>25</span></td>
+                                <td class="black-cell"><span>82</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>9</span></td>
+                                <td><span>6</span></td>
+                                <td><span>6</span></td>
+                                <td><span>6</span></td>
+                                <td><span>2</span></td>
+                                <td><span>1</span></td>
+                                <td><span>1</span></td>
+                                <td><span>1</span></td>
+                                <td><span>1</span></td>
+                                <td><span>1</span></td>
+                                <td><span>1</span></td>
+                            </tr>
+                            <tr>
+                                <td class="gray-cell"><span>15</span></td>
+                                <td class="gray-cell"><span>29</span></td>
+                                <td class="gray-cell"><span>34</span></td>
+                                <td class="gray-cell"><span>38</span></td>
+                                <td class="gray-cell"><span>27</span></td>
+                                <td class="gray-cell"><span>13</span></td>
+                                <td class="gray-cell"><span>16</span></td>
+                                <td class="gray-cell"><span>17</span></td>
+                                <td class="gray-cell"><span>16</span></td>
+                                <td class="gray-cell"><span>18</span></td>
+                                <td class="gray-cell"><span>21</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>8</span></td>
+                                <td><span>2</span></td>
+                                <td><span>3</span></td>
+                                <td><span>8</span></td>
+                                <td><span>8</span></td>
+                                <td><span>9</span></td>
+                                <td><span>10</span></td>
+                                <td><span>6</span></td>
+                                <td><span>1</span></td>
+                                <td><span>3</span></td>
+                                <td><span>3</span></td>
+                            </tr>
+                            <tr>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                                <td class="gray-cell"><span>-</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                                <td><span>-</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-line container-fluid mb-4 mb-md-5 px-0 pt-5">
+                <div class="wrap-content-time-line mt-5 w-100">
+                    <div class="container">
+                        <ul role="tablist" class="list-unstyled d-flex justify-content-between mb-4">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tl-2016" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2016-pane" type="button" role="tab" aria-controls="tl-2016-pane"
+                                    aria-selected="true">
+                                    <h4 class="m-0">2016</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2017" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2017-pane" type="button" role="tab" aria-controls="tl-2017-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2017</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2018" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2018-pane" type="button" role="tab" aria-controls="tl-2018-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2018</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2019" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2019-pane" type="button" role="tab" aria-controls="tl-2019-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2019</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2020" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2020-pane" type="button" role="tab" aria-controls="tl-2020-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2020</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2021" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2021-pane" type="button" role="tab" aria-controls="tl-2021-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2021</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2022" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2022-pane" type="button" role="tab" aria-controls="tl-2022-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2022</h4>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tl-2023" data-bs-toggle="tab"
+                                    data-bs-target="#tl-2023-pane" type="button" role="tab" aria-controls="tl-2023-pane"
+                                    aria-selected="false">
+                                    <h4 class="m-0">2023</h4>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tl-2016-pane" role="tabpanel"
+                                aria-labelledby="tl-2016" tabindex="0">
+                                <h4>Chủ đề 2016</h4>
+                                <p>1’ của chặng thứ hai của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    4’ của chặng đầu tiên của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    6’ của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    10’  của chặng thứ hai của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    11’ của chặng thứ năm của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    14’ của chặng 3b của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    18’ của chặng thứ năm của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    19’ của chặng thứ tư của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    23’ của chặng 3a của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )<br>
+                                    24’ của Tour ALSACE, chặng thứ ba của VTV Tôn Hoa Sen (Hà Nội >Thanh Hóa )</p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2017-pane" role="tabpanel" aria-labelledby="tl-2017"
+                                tabindex="1">
+                                <h4>Chủ đề 2017</h4>
+                                <p>2 e của chặng thứ hai của The Larry H.Miller Tour of Utah (Thành phố Brigham>Khu nghỉ
+                                    dưỡng Snowbasin)
+                                    <br>3 e của chặng 3b của Tour de Beauce (Saint-Georges>Beauce Art), của chặng thứ
+                                    hai của Tour de Beauce (Lac-Méganti>Lac-Méganti)
+                                    <br>5 e của chặng đầu tiên của Cuộc đua chặng Walmart Joe Martin (Công viên bang
+                                    Devil's Den>Công viên bang Devil's Den [ITT])
+                                    <br>6 e của Colorado Classic
+                                    <br>8 e của Int. Raiffeisen Grand Prix Gratwein-Straßengel, của Tour of the Gila,
+                                    thuộc chặng thứ năm của Tour of the Gila (Silver City>Pinos Altos), thuộc chặng đầu
+                                    tiên của Tour of the Gila (Silver City>Whitewater Mesa)
+                                    <br>9 e của The Larry H.Miller Tour of Utah, chặng thứ tư của Tour de Beauce
+                                    (Québec>Québec)
+                                    <br>10 e của chặng thứ năm của Amgen Tour of California (Ontario>Mt. Baldy)
+                                    <br>11 e của chặng thứ bảy của The Larry H.Miller Tour of Utah (Thành phố Salt
+                                    Lake>Thành phố Salt Lake)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2018-pane" role="tabpanel" aria-labelledby="tl-2018"
+                                tabindex="2">
+                                <h4>Chủ đề 2018</h4>
+                                <p>1er của The Larry H.Miller Tour of Utah, thuộc chặng thứ sáu của The Larry H.Miller
+                                    Tour of Utah (Park City>Park City), thuộc chặng thứ năm của The Larry H.Miller Tour
+                                    of Utah ( Canyons Village>Snowbird Ski and Summer), thuộc chặng thứ hai của The
+                                    Larry H.Miller Tour of Utah (Thành phố Payson>Thành phố Payson)
+                                    <br>6 e của Hammer Hồng Kông
+                                    <br>10 e của chặng thứ bảy của La Vuelta Ciclista a España (Puerto Lumbreras>Pozo
+                                    Alcón), thuộc chặng thứ tư của The Larry H.Miller Tour of Utah (Thành phố Salt
+                                    Lake>Thành phố Salt Lake)
+                                    <br>14 e của chặng thứ ba của The Larry H.Miller Tour of Utah (Đảo Antelope>Thành
+                                    phố Layton)
+                                    <br>17 e của chặng thứ năm của La Vuelta Ciclista a España (Granada>Roquetas de Mar)
+                                    <br>20 e của chặng thứ chín của La Vuelta Ciclista a España (Talavera de la Reina>La
+                                    Covatilla)
+                                    <br>23 e của chặng đầu tiên của The Larry H.Miller Tour of Utah (Thành phố
+                                    Cedar>Thành phố Cedar)
+                                    <br>25 e phần mở đầu của The Larry H.Miller Tour of Utah (St. George>St. George)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2019-pane" role="tabpanel" aria-labelledby="tl-2019"
+                                tabindex="3">
+                                <h4>Chủ đề 2019</h4>
+                                <p>1 er của chặng thứ mười lăm của La Vuelta Ciclista a España (Tineo>Santuario del
+                                    Acebo)
+                                    <br>5 e của Cuộc đua xe đạp đường trường Cúp Nhật Bản, chặng thứ tám của Critérium
+                                    du Dauphiné (Cluses>Champéry)
+                                    <br>9 e của chặng thứ năm của La Vuelta Ciclista a España (L'Eliana>Observatorio
+                                    Astrofísico de Javalambre)
+                                    <br>12 e của chặng thứ mười tám của La Vuelta Ciclista a España (Colmenar
+                                    Viejo>Becerril de la Sierra)
+                                    <br>15 e của giai đoạn thứ bảy của Critérium du Dauphiné
+                                    (Saint-Genix-les-Villages>Pipay)
+                                    <br>16 e của chặng thứ chín của La Vuelta Ciclista a España (Andorra la
+                                    Vella>Cortals d'Encamp)
+                                    <br>21 e của giai đoạn thứ mười một của La Vuelta Ciclista a España
+                                    (Saint-Palais>Urdax-Dantxarinea), của giai đoạn thứ bảy của La Vuelta Ciclista a
+                                    España (Onda>Mas de la Costa)
+                                    <br>24 e của chặng thứ mười bốn của Giro d'Italia (Saint Vincent>Courmayeur (Skyway
+                                    Monte Bianco))
+                                    <br>25 e của Giro dell'Emilia, của Donostia San Sebastian Klasikoa, của giai đoạn
+                                    đầu tiên của Volta Ciclista a Catalunya (Calella>Calella)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2020-pane" role="tabpanel" aria-labelledby="tl-2020"
+                                tabindex="4">
+                                <h4>Chủ đề 2020</h4>
+                                <p>
+                                    1er của giai đoạn thứ năm của Critérium du Dauphiné (Megève>Megève)
+                                    <br>4 e của chặng thứ mười bảy của Tour de France (Grenoble>Méribel - Col de la
+                                    Loze)
+                                    <br>6 e của chặng thứ mười hai của La Vuelta Ciclista a España (Pola de Laviana>Alto
+                                    de l'Angliru), của chặng thứ mười lăm của Tour de France (Lyon>Grand Colombier), của
+                                    chặng thứ ba của Tour de la Provence (Istres>Mont Ventoux/Nhà gỗ Reynard)
+                                    <br>8 e của chặng thứ tám của La Vuelta Ciclista a España (Logroño>Alto de
+                                    Moncalvillo), của chặng đầu tiên của La Vuelta Ciclista a España (Irún>Arrate), của
+                                    Tour de la Provence
+                                    <br>9 e của chặng thứ ba của La Vuelta Ciclista a España (Lodosa>La Laguna Negra de
+                                    Vinuesa), của chặng thứ hai của La Vuelta Ciclista a España (Pamplona>Lekunberri)
+                                    <br>10 e của Critérium du Dauphiné
+                                    <br>11 e của chặng thứ mười tám của Tour de France (Méribel>La Roche-sur-Foron), của
+                                    chặng thứ tư của Critérium du Dauphiné (Ugine>Megève), của chặng thứ hai của
+                                    Critérium du Dauphiné (Vienne>Col de Porte)
+                                    <br>12 e của chặng thứ năm của La Vuelta Ciclista a España (Huesca>Sabiñanigo)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2021-pane" role="tabpanel" aria-labelledby="tl-2021"
+                                tabindex="5">
+                                <h4>Chủ đề 2021</h4>
+                                <p>1er của chặng thứ 15 của Tour de France (Céret>Andorra la Vella)
+                                    <br>2 e của chặng thứ mười bảy của La Vuelta Ciclista a España (Unquera>Lagos de
+                                    Covadonga)
+                                    <br>4 e của chặng thứ bảy của La Vuelta Ciclista a España (Gandía>Balcón de
+                                    Alicante)
+                                    <br>5 e của giai đoạn thứ tư của Volta Ciclista a Catalunya (Ripoll>Port Ainé)
+                                    <br>6 e của chặng thứ mười tám của Tour de France (Pau>Luz Ardiden), của chặng thứ
+                                    bảy của Critérium du Dauphiné (Saint-Martin-le-Vinoux>La Plagne), của chặng thứ sáu
+                                    của Critérium du Dauphiné ( Loriol-sur-Drome>Le Sappey-en-Chartreuse), thuộc chặng
+                                    thứ ba của Volta Ciclista a Catalunya (Canal Olimpic de Catalunya>Vallter 2000)
+                                    <br>7 e của chặng thứ năm của UAE Tour (Fujairah Marine Club>Jebel Jais)
+                                    <br>8 e của La Vuelta Ciclista a España, chặng thứ mười lăm của La Vuelta Ciclista a
+                                    España (Navalmoral de la Mata>El Barraco), chặng thứ ba của Tour de Romandie
+                                    (Estavayer>Estavayer)
+                                    <br>9 e của chặng thứ mười tám của La Vuelta Ciclista a España (Salas>Altu d'El
+                                    Gamoniteiru)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2022-pane" role="tabpanel" aria-labelledby="tl-2022"
+                                tabindex="6">
+                                <h4>Chủ đề 2022</h4>
+                                <p>3 e của Faun-Ardèche cổ điển
+                                    <br>8 e của chặng thứ mười tám của Tour de France (Lourdes>Hautacam)
+                                    <br>9 e của chặng thứ năm của Tour de Romandie (Aigle>Villars [ITT]), của chặng đầu
+                                    tiên của Tour de Suisse (Küsnacht>Küsnacht), của chặng thứ mười hai của Tour de
+                                    France (Briançon>L'Alpe d'Huez)
+                                    <br>10 e của chặng thứ bảy của Tour de France (Tomblaine>La Super Planche des Belles
+                                    Filles)
+                                    <br>12 e của Tour de Romandie, chặng thứ tư của La Vuelta Ciclista a España
+                                    (Vitoria-Gasteiz>Laguardia)
+                                    <br>18 e của Tour de France
+                                    <br>19 e của chặng thứ mười một của Tour de France (Albertville>Col du Granon), của
+                                    chặng thứ chín của Tour de France (Aigle>Châtel les portes du Soleil), của chặng thứ
+                                    sáu của La Vuelta Ciclista a España ( Bilbao>Ascensión al Pico Jano. San Miguel de
+                                    Aguayo)
+                                    <br>20 e của chặng thứ hai của Tour de Suisse (Küsnacht>Aesch)
+                                    <br>21 e của chặng thứ mười sáu của Tour de France (Carcassonne>Foix), của chặng thứ
+                                    năm của La Vuelta Ciclista a España (Irún>Bilbao)
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tl-2023-pane" role="tabpanel" aria-labelledby="tl-2023"
+                                tabindex="7">
+                                <h4>Chủ đề 2023</h4>
+                                <p>4 e của chặng thứ bảy của UAE Tour (Sân vận động Hazza Bin Zayed>Jebel Hafeet)
+                                    <br>5 e của UAE Tour, chặng thứ mười sáu của Giro d'Italia (Sabbio Chiese>Monte
+                                    Bondone)
+                                    <br>6 e của chặng thứ 20 của Giro d'Italia (Tarvisio>Monte Lussari [ITT])
+                                    <br>9 e của chặng thứ ba của UAE Tour (Umbrella Beach Al Fujairah>Jebel Jais)
+                                    <br>11 e của chặng thứ mười tám của Giro d'Italia (Oderzo>Val di Zoldo (Palafavera))
+                                    <br>12 e của chặng thứ mười chín của Giro d'Italia (Longarone>Tre Cime di Lavaredo),
+                                    của chặng thứ mười ba của Giro d'Italia (Le Châble>Crans-Montana)
+                                    <br>14 e của chặng thứ năm của Volta Ciclista a Catalunya (Tortosa>Lo Port), của
+                                    Giro d'Italia
+                                    <br>15 e của giai đoạn thứ ba của Volta Ciclista a Catalunya (Olost>La Molina
+                                    (Alp)), của giai đoạn thứ hai của Volta Ciclista a Catalunya (Mataró>Vallter), của
+                                    giai đoạn thứ mười hai của Giro d'Italia (Bra >Rivoli)
+                                    <br>19 e của Volta Ciclista a Catalunya
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tay-dua container mb-4 mb-md-5">
+                <h3>tay đua nổi bật các mùa</h3>
+                <div class="w-100 row m-0 p-0 py-4">
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f1.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td1.png" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f2.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td2.png" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f3.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td3.png" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f4.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td4.png" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f5.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td5.png" style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xxl-2 td mb-3">
+                        <div class="flag">
+                            <img src="./web/images/taydau/f2.png">
+                        </div>
+                        <div class="td-profile d-flex justify-content-center">
+                            <img src="./web/images/taydau/td6.png" style="width: 80%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="don-vi-tai-tro container">
+                <h3>đơn vị tài trợ</h3>
+                <div class="swiper my-4 my-xl-5 w-100 don-vi-tai-tro-slide">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/vtv.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/hoasen.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/vcf.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/unix.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/omo.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/gt.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/trek.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                        <div class="swiper-slide h-100 p-4">
+                            <img src="./web/images/twitter.png" class="w-50" style="object-fit: contain;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container-fluid p-0">
+            <div class="container pt-4">
+                <!-- row: tạo hàng ngang -->
+                <div class="row m-0 p-3 px-md-4 px-lg-5">
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/logo.png">
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-facebook-square fa-2x me-2"></i>vtvcuptuhaotoasang
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-instagram-square fa-2x me-2"></i>@vtvgo.vn
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-youtube fa-2x me-2"></i>@vtvthethaoofficial
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/vtv.png">
+                        </div>
+                        <h6 class="text-center">VTV - Đài truyền hình Viêt Nam</h6>
+                        <p class="text-center">Tổng đài VTV:<br>
+                             (024) 3.8355931; <br>(024) 3.8355932</p>
+                        <p class="text-center">Email: toasoan@vtv.vn</p>
+                    </div>
+                    <div class="col-12 col-md-4 row m-0 mb-3 p-0">
+                        <div class="w-100 d-flex mb-3 justify-content-center">
+                            <img src="./web/images/hoasen.png">
+                        </div>
+                        <h6 class="text-center">Công ty tập đoàn Tôn Hoa Sen</h6>
+                        <p class="text-center">Khu công nghiệp Sóng Thần II,
+                            Phường Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương,
+                            Việt Nam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-0 px-0 py-2 copy-right d-flex justify-content-center bg-dark">
+                <span>
+                    Copyright 2024 © Tôn Hoa Sen Club
+                </span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var intro = document.getElementById("intro");
+        var wrapper = document.getElementById("wrapper");
+        setTimeout(function () {
+            intro.classList.add('d-none');
+            wrapper.classList.remove('d-none');
+        }, 500);
+    </script>
+
+    <script>
+        var banner = new Swiper(".banner-slide", {
+            autoplay: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var donViTaiTro = new Swiper(".don-vi-tai-tro-slide", {
+            autoplay: true,
+            loop: true,      
+            slidesPerView: 2,        
+            spaceBetween: 32,     
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

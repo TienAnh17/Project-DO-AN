@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "ese";
+    src: url("../fonts/EncodeSansExpanded-Regular.ttf")
+}
+
+@font-face {
+    font-family: "bevn-bold";
+    src: url("../fonts/BeVietnamPro-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "ese-bold";
+    src: url("../fonts/EncodeSansExpanded-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "ma";
+    src: url("../fonts/MontserratAlternates-Regular.ttf")
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ese"
+}
+
+.ff-ma {
+    font-family: "ma"
+}
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    animation: body-intro 0.5s linear
+}
+
+#intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/intro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 9999;
+    animation: intro 0.5s linear;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#intro .loading {
+    background-color: #0000008d;
+    color: #FF550D;
+    padding: 14px;
+    border-radius: 6px
+}
+
+#intro .loading .spinning {
+    animation: spinning 1s linear infinite
+}
+
+@keyframes spinning {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes body-intro {
+
+    0%,
+    90% {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden
+    }
+}
+
+@keyframes intro {
+
+    0%,
+    90% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+a {
+    text-decoration: none !important
+}
+
+button,
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+    border: unset !important
+}
+
+.text-main-color {
+    color: #FF550D !important
+}
+
+.bg-main-color {
+    background-color: #FF550D !important
+}
+
+.border-main-color {
+    border: 1px solid #FF550D !important
+}
+
+.btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #FF550D;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "ese-bold"
+}
+
+h1 {
+    font-size: calc(2.175rem + 1.3vw) !important;
+    text-transform: uppercase;
+    color: #fff !important
+}
+
+h3 {
+    font-size: calc(1.175rem + 1.3vw) !important;
+    text-transform: uppercase;
+    font-weight: bolder
+}
+
+h3:not(.title-clear) {
+    color: #000 !important;
+    position: relative;
+    width: max-content !important;
+    padding-top: 16px
+}
+
+h3:not(.title-clear)::after,
+h3:not(.title-clear)::before {
+    position: absolute
+}
+
+h3:not(.title-clear)::before {
+    content: "";
+    height: 10px;
+    width: calc(100% + 90px);
+    background-image: url("../images/materials/line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: -10px
+}
+
+h3:not(.title-clear)::after {
+    content: "";
+    background-image: url("../images/materials/biker.png");
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 141 / 122.63;
+    right: -90px;
+    bottom: -7px
+}
+
+#racingTourSidebar {
+    background-color: #292929;
+    color: #fff
+}
+
+#racingTourSidebar .offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #FF550D
+}
+
+#racingTourSidebar .offcanvas-body .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+
+#racingTourSidebar .offcanvas-body .nav-menu .nav-link {
+    width: 100%;
+    padding: 20px 15px;
+    transition: 0.3s all ease;
+    text-transform: uppercase
+}
+
+#racingTourSidebar .offcanvas-body .nav-menu .nav-link:hover {
+    background-color: #FF550D;
+    color: #fff
+}
+
+#navbar {
+    border: 0;
+    border-top: 10px;
+    border-color: #FF550D !important;
+    border-style: solid;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase
+}
+
+#navbar .wrap-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+#navbar .wrap-nav .nav-logo {
+    height: 90%
+}
+
+#navbar .wrap-nav .nav-logo img {
+    object-fit: contain;
+    height: 100%
+}
+
+#navbar .wrap-nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#navbar .wrap-nav .nav-menu .nav-link {
+    padding: 10px 15px;
+    transition: 0.3s all ease
+}
+
+#navbar .wrap-nav .nav-menu .nav-link:hover {
+    background-color: #FF550D;
+    color: #fff
+}
+
+main {
+    color: #000
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #000;
+    color: #ECECEC
+}
+
+footer .copy-right {
+    width: 100;
+    border-top: 1px solid #FF550D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+footer img {
+    object-fit: contain;
+    width: 35%;
+}

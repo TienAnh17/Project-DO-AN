@@ -1,0 +1,64 @@
+.banner {
+    background-image: url("../images/giaidau/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center
+}
+
+.banner .wrap-content {
+    background-color: #00000086
+}
+
+.the-thuc-thi-dau {
+    padding: 20px
+}
+
+.the-thuc-thi-dau .the-thuc {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #FF550D;
+    padding: 10px;
+    position: relative;
+    transition: all 0.2s ease
+}
+
+.the-thuc-thi-dau .the-thuc h3 {
+    position: absolute;
+    background-color: #fff;
+    top: -2.5rem;
+    padding: 8px 20px
+}
+
+.the-thuc-thi-dau .the-thuc p {
+    text-align: justify
+}
+
+.the-thuc-thi-dau .the-thuc:hover {
+    transform: scale(1.02)
+}
+
+.the-thuc-thi-dau .tt1 {
+    background-image: url("../images/giaidau/1.png");
+    border-left: unset !important;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-position: 0%
+}
+
+.the-thuc-thi-dau .tt1 h3 {
+    left: -10px
+}
+
+.the-thuc-thi-dau .tt2 {
+    background-image: url("../images/giaidau/2.png");
+    border-right: unset !important;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-position: 70%
+}
+
+.the-thuc-thi-dau .tt2 h3 {
+    right: -10px
+}
